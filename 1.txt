@@ -1,0 +1,62 @@
+## 用到的package
+
+- gin
+- gorm
+- github.com/spf13/viper
+
+## 后端接口
+共计17个接口
+
+- [ ] 首页图片列表接口
+- [ ] 用户端上传图片接口
+- [ ] 图片详情接口
+- [ ] 用户下载图片接口
+- [ ] 用户收藏图片接口
+- [ ] 用户举报图片接口
+- [ ] 图片详情页推荐图片接口
+- [ ] 用户搜索接口
+- [ ] 我的页面收藏列表接口
+- [ ] 我的页面新建文件夹接口
+- [ ] 微信登录接口
+- [ ] 登出接口
+- [ ] 后台审核图片列表
+- [ ] 后台审核通过接口
+- [ ] 后台审核不通过接口
+- [ ] 后台删除图片接口
+- [ ] 后台上传图片接口
+
+## 数据模型
+
+### 类别 (category)
+ - id
+ - cat_name
+ - description
+ - pid
+ - display_order
+ - status
+ - user_id
+ - created_at
+ - updated_at
+
+### 图片 (picture)
+ - id
+ - img_path
+ - description
+ - cat_id
+ - display_order
+ - status
+ - user_id
+ - created_at
+ - updated_at
+
+### 用户 (user)
+ - id
+ - name
+ - avatar
+ - wx_id
+ - status
+ - created_at
+ - updated_at
+
+
+
